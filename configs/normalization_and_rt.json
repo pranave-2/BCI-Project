@@ -1,0 +1,27 @@
+{
+ "window": {
+  "L": 600,
+  "B": 150,
+  "n_retained": 6090,
+  "retention": 0.8255388369255795,
+  "epoch_samples": [
+   112,
+   262
+  ],
+  "note": "window = decimated samples [b-188, b-38) with b = floor(tresp/4); i.e. 1 kHz time [4b-752, 4b-152) ms; 4b is 0-3 ms before the response, so the window ends 152-155 ms before the response and spans about -755 to -152 ms"
+ },
+ "rule": "Among grid windows with B >= 100 ms and pooled retention >= 80 percent, choose the largest L; ties are broken by the largest B.",
+ "canonical_normalization": "per-participant z-score over the participant's retained trials (target participant's unlabeled batch used; labels never used)",
+ "variants": {
+  "canonical": "per-participant z-score over the participant's retained trials (target participant's unlabeled batch used; labels never used)",
+  "all_trials_batch": "per-participant z-score over ALL valid trials of the participant, including excluded fast trials (normalization of the first submitted manuscript's Table 4)",
+  "training_only_pooled": "no target-participant data used: every feature standardized with the mean/SD of the pooled training participants' raw features",
+  "separate_calibration_run": "held-out participant's run r standardized with statistics of the participant's OTHER run (unlabeled calibration session); training participants as canonical",
+  "causal_running": "each trial standardized with the mean/SD of the participant's earlier retained trials in the same run (>= 20 earlier trials required; trials with fewer are dropped from training and testing)",
+  "rt_linear_transductive": "canonical features residualized on the participant's own z(ln RT) (needs completed RTs of the target participant)",
+  "rt_linear_training_only": "residualization coefficients estimated on training participants only and applied to the held-out participant (no target RT regression)",
+  "rt_flex_training_only": "as above with the 5-df natural-spline RT basis"
+ },
+ "rt_regression": "linear: z(ln RT) within participant; flexible: 5-df natural cubic spline of the within-participant rank of ln RT; residualization within participant with intercept; re-standardized",
+ "rt_deciles": "within-participant rank deciles of ln RT; terciles analogous"
+}

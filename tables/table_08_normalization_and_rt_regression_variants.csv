@@ -1,0 +1,8 @@
+Variant,Choice,Accuracy,Confid.
+Canonical batch,0.527,0.535,0.540
+All-trial batch,0.526,0.535,0.540
+Training-only pooled,0.524,0.537,0.544
+Calibration run,0.525,0.534,0.536
+Causal running,0.513,0.544,0.540
+"RT lin., train-only",0.525,0.502,0.519
+"RT spline, train-only",0.527,0.503,0.517

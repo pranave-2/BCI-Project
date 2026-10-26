@@ -1,0 +1,8 @@
+Quantity,Accuracy,Confid.
+Observed mean AUC,0.476,0.471
+Permutation null mean (5th pct.),0.500 (0.481),0.500 (0.471)
+Lower-tail permutation <i>p</i>,0.024,0.048
+Participants below 0.5,16/24,15/24
+Within-participant 10-fold AUC,0.506,0.542
+"Pattern correlation, held-out vs. training",−0.10,−0.03
+Full-model training AUC,0.554,0.582

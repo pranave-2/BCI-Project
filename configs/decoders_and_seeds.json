@@ -1,0 +1,15 @@
+{
+ "primary": "L2 logistic regression, C=0.1, balanced class weights, unpenalized intercept, exact Newton solver (gradient tol 1e-9), score = decision function, positive class = right choice / correct / high confidence",
+ "comparison": {
+  "lr": "FastLR{'C': 0.1, 'class_weight': 'balanced', 'solver': 'exact Newton (gradient tol 1e-9)', 'penalty': 'l2', 'intercept_penalized': False}",
+  "lda": "LinearDiscriminantAnalysis{'covariance_estimator': None, 'n_components': None, 'priors': None, 'shrinkage': 'auto', 'solver': 'lsqr', 'store_covariance': False, 'tol': 0.0001}",
+  "svm_lin": "LinearSVC{'C': 0.01, 'class_weight': 'balanced', 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'loss': 'squared_hinge', 'max_iter': 1000, 'multi_class': 'ovr', 'penalty': 'l2', 'random_state': None, 'tol': 0.0001, 'verbose': 0}",
+  "svm_rbf": "SVC{'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': 'balanced', 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}",
+  "rf": "RandomForestClassifier{'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': 'balanced_subsample', 'criterion': 'gini', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 20, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 300, 'n_jobs': 1, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}",
+  "mlp": "MLPClassifier{'activation': 'relu', 'alpha': 0.1, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': True, 'epsilon': 1e-08, 'hidden_layer_sizes': (32,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 200, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': 0, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}"
+ },
+ "permutations": {
+  "n": 1000,
+  "seeds": "seed0 + permutation index; seed0 per analysis: see code (a2: 100000 + 10000*target index + offsets; a4: 300000 + 20000*contrast; a6: 500000...; a7: 600000...; a11: 800000...; a12: 1000000...)"
+ }
+}

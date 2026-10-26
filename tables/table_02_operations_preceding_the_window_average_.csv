@@ -1,0 +1,9 @@
+Operation,Source,Phase / support,Uses samples after window end?
+Gradient-artifact template subtraction (80 volumes),Dataset,Templates centred on each volume,Possibly (artifact estimate)
+12 ms median filter,Dataset,"Presumably centred, 12 ms","Possibly, up to 6 ms"
+0.5–40 Hz band-pass,Dataset,"Type, order, phase not stated",Not determinable
+Ocular and cardiac component removal,Dataset,Spatial projection from the recordings,Not determinable
+"Baseline, 100 ms before stimulus",Dataset,Earlier samples only,No
+Decimation 1000 to 250 Hz (used for epochs),This study,"Zero phase, Chebyshev I, order 8; kernel below 0.001 of peak beyond 112 ms",0.25% of kernel weight
+Window average,This study,Samples inside the window,No
+Feature and RT normalization,This study,Statistics of the participant's retained trials,Yes (batch; see {S:norm})

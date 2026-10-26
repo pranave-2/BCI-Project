@@ -1,0 +1,7 @@
+Outcome and predictor,β,SE,p
+Repeat: neural state <i>S</i>,0.019,0.039,0.625
+Repeat: reported conf. <i>C</i>,0.143,0.050,0.009
+ln RT N+1: <i>S</i>,0.001,0.002,0.782
+ln RT N+1: <i>C</i>,0.004,0.004,0.235
+Accuracy N+1: <i>S</i>,0.040,0.032,0.233
+Accuracy N+1: <i>C</i>,0.018,0.030,0.553

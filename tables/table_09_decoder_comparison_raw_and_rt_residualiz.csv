@@ -1,0 +1,11 @@
+Decoder,Choice,Accuracy,Confid.
+"Mean amplitude, logistic (primary)",0.527/.527,0.535/.502,0.540/.504
+"Mean amplitude, shrinkage LDA",0.525/.526*,0.536/.503*,0.541/.505*
+"Mean amplitude, linear SVM",0.527/.527*,0.535/.502*,0.541/.504*
+"Mean amplitude, RBF SVM",0.510/.520,0.532/.504*,0.550/.502
+"Mean amplitude, random forest",0.511/.504,0.533/.495*,0.551/.505
+"Mean amplitude, perceptron",0.517/.514,0.522/.497,0.532/.495*
+"Four sub-bin means, logistic",0.515/.518,0.541/.513*,0.560/.517
+"Four sub-bin means, LDA",0.514/.519,0.542/.512*,0.563/.515
+"Log variance, logistic",0.512/.508,0.476/.472,0.471/.485
+"Mean + log variance, logistic",0.530/.528*,0.510/.481,0.506/.488

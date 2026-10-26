@@ -1,0 +1,10 @@
+Study,Signal and timing,Main finding
+{Philiastides},Single-trial components about 170 and 300 ms after the stimulus,Components predicted accuracy; a separate component tracked difficulty
+{Gherman},Single-trial component before the choice and the confidence report (EEG-fMRI),"Stimulus-independent confidence component, linked to ventromedial prefrontal activity"
+{Boldt},Pe after the response,Pe graded with confidence independent of accuracy
+{Rausch},350–500 ms after the stimulus and 250–350 ms after the response,Two confidence-related periods; post-response activity partly distinct
+{Desender19b},Time-resolved decoding from the initial decision onward,Confidence decodable; no above-chance decoding before the response
+{Desender19a},Centro-parietal component sensitive to confidence,Predicted the bound increase on the next trial
+{Dou24},"Centro-parietal positivity slope before the decision, within participant","Predicted confidence with accuracy, RT, and evidence strength controlled"
+{Balsdon24},"Post-decision confidence weights applied to pre-response EEG, within participant",Online confidence signal preceding motor accumulation
+{Fernandez21},Stimulus- and response-locked mean amplitudes plus RT; leave-one-participant and leave-one-task-out,Continuous confidence predicted better than a mean baseline; RT hurt transfer
